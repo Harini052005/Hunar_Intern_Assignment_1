@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFDAB9; 
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #FFDAB9;
+}
+
+h1 {
+    display: inline;
+    margin-top: 10px;
+    padding-left: 41%;
+    color: #333;
+    font-size: 40px;
+}
+.sub-heading{
+    font-size: 20px;
+    padding-left: 41%;
+    font-weight: 500;
+    color: #000000;
+
+}
+
+.content {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.about-img {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.description {
+    flex: 1;
+}
+
+.description p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-btn {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #575757;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    animation: bounce 0.3s ease-in-out;
+}
+
+
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto 0;
+    padding: 20px;
+    width: 90%;
+    gap: 40px;
+}
+
+.info-box {
+    background-color: #FFA07A;
+    width: 40%;
+    padding: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #555;
+}
+.info-box:hover {
+    transform: translateY(-10px) scale(1.05) rotate(2deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes hoverAnimation {
+    0% { transform: translateY(0) scale(1) rotate(0); }
+    50% { transform: translateY(-5px) scale(1.02) rotate(1deg); }
+    100% { transform: translateY(-10px) scale(1.05) rotate(2deg); }
+}
+
+@keyframes buttonHoverAnimation {
+    0% { transform: translateY(0) scale(1) rotate(0); }
+    50% { transform: translateY(-2.5px) scale(1.03) rotate(-1deg); }
+    100% { transform: translateY(-5px) scale(1.05) rotate(-2deg); }
+}
